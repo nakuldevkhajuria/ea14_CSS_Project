@@ -1,0 +1,14 @@
+body{
+    color:rgb(108, 26, 26)
+}
+
+h1,h2 {
+    color: rgb(225, 73, 46);
+}
+
+.line{
+    text-decoration: line-through;
+}
+.abc{
+    letter-spacing: 5px;
+}
