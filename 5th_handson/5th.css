@@ -1,0 +1,95 @@
+.heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+body{
+    background-color: yellow;
+}
+.a1{
+    text-align: center;
+    display:grid;
+    margin-top: 30px;
+    /* margin: auto; */
+    grid-template-columns: auto auto auto auto;
+   
+
+}
+.a1 p{
+    text-align:right;
+    margin-right: 20px;
+    margin-top: 110px;
+}
+.a11{
+    background-color: rgb(33, 104, 135);
+
+    animation: first alternate 2s infinite;
+
+    width: 100px;
+    height: 110px;
+}
+
+@keyframes first{
+    0% {transform: skewX(-20deg);}
+    100% {transform: skewX(20deg);}
+}
+.b11{
+    background-color: rgb(140, 134, 118);
+
+    animation: second alternate 2s infinite;
+
+    width: 100px;
+    height: 110px;
+}
+@keyframes second {
+    0% {transform: skewY(20deg);}
+    100% {transform: skewY(-20deg);}
+}
+.c11{
+    background-color: rgb(33, 104, 135) ;
+    animation: third normal 2s infinite;
+    width: 100px;
+    height: 110px;
+}
+@keyframes third {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
+    
+}
+.d11{
+    background-color: rgb(33, 104, 135) ;
+    animation: fourth1 alternate 3s infinite;
+    border: solid 3px rgb(14, 64, 85);
+    width: 100px;
+    height: 110px;
+}
+@keyframes fourth1 {
+    0% {transform:scaleY(0.5)}
+}
+.d12{
+    background-color: rgb(154, 27, 27) ;
+    animation: fourth2 alternate 2s infinite;
+    border: solid 3px rgb(79, 10, 10);
+    width: 100px;
+    height: 110px;
+}
+@keyframes fourth2 {
+    0% {transform:scaleX(0.4)}
+}
+.d13{
+    background-color: green ;
+    animation: fourth3 alternate 2s infinite;
+    border: solid 3px rgb(36, 97, 15);
+    width: 100px;
+    height: 110px;
+}
+@keyframes fourth3 {
+    0% {transform:rotateZ(20deg)}
+    100% {transform: rotateZ(-90deg);}
+}
+.a{
+    text-decoration: underline;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}

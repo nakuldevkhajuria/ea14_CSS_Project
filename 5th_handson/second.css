@@ -1,0 +1,89 @@
+ .heading{
+    font-size: 30px;
+    text-align: center;
+
+ }
+ body{
+    background-color: yellow;
+ }
+ .a1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+ }
+ .number{
+    text-align: right;
+    margin-right: 10px;
+ }
+.a:hover {
+    animation: first 4s normal ;
+    transform-origin: left;
+}
+
+
+@keyframes first {
+    0%{
+        transform:scaleX(1)
+}
+100%{transform: scaleX(3.5);}
+
+}
+.sq{
+    width: 120px;
+    height: 110px;
+    background-color: rgb(75, 212, 17);
+    margin: 2px;
+}
+.b{
+    transition: width 5s , height 6s;
+}
+
+.b:hover{
+    width: 300px;
+    height: 340px;
+}
+  
+.c{
+    transition: width 3s;
+}
+.c:hover {
+    width: 400px;
+}
+.d{
+    transition: width 2s;
+}
+.d:hover {
+    width: 400px;
+}
+.e:hover {
+    animation: five 3s normal ;
+    transform-origin: left;
+}
+
+
+@keyframes five {
+0% , 35%{transform:scaleX(1);}
+35% , 75%{transform: scaleX(2.1);}
+75% , 100%{transform: scaleX(2.6);}
+
+}
+.f{
+    transition: width 2s;
+}
+.f:hover {
+    width: 400px;
+}
+.g{
+    transition: width 2s;
+}
+.g:hover {
+    width: 400px;
+}
+.link{
+    color: blue;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
+}
+
+

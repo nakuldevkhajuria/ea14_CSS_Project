@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border-left: 8px solid orange;
+    border-right: 8px solid green;
+    border-top: 8px solid white;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+.head span{
+    margin-left: 10px;
+}
+
+.happy{
+    background-color: orange;
+    font-size: 60px;
+}
+
+.in{
+    background-color: white;
+    font-size: 60px;
+}
+
+.day{
+    background-color: green;
+    font-size: 60px;
+}
+
+.sun{
+    width:80px;
+    height: 80px;
+}
+
+.sun img{
+    width:140px;
+    height:140px;
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+    animation: sen infinite 50s normal;
+    
+}
+@keyframes sen {
+    0% ,50% {transform: translateX(0px);}
+
+   50%,  100% {transform: translateX(-200px);}
+}
+
+
+.road{
+    height: 200px;
+    width: 909%;
+  
+    background-image: url(./road.jpg);
+    background-repeat:repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+
+    animation: way 5s linear infinite;
+}
+
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url(./city.png);
+    position: absolute;
+    bottom: 200px;
+  
+    animation: city 20s linear infinite;
+    filter: brightness(0%);
+}
+
+.flag{
+    width: 200px;
+}
+
+.flag img{
+    width: 10%;
+    position: absolute;
+    bottom:184px;
+    left: 820px;
+    animation: carani 1s linear infinite;
+}
+
+.car{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: carani 1s linear infinite;
+}
+
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img{
+    width: 72px;
+    height: 72px;
+}
+
+.bwheel{
+    left: -165px;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.fwheel{
+    left: 80px;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes way {
+    100%{transform: translateX(-3400px);}
+}
+
+@keyframes city {
+    100%{transform: translateX(-3400px);}
+}
+
+@keyframes carani {
+    0%   {transform: translate(1px);}
+    50%  {transform: translate(-1px);}
+    100% {transform: translateY(1px);}
+    
+   
+    
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
